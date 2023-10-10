@@ -7,6 +7,20 @@ public class Calc {
         add();
         multiply();
         divide();
+        subtract();
+    }
+
+    private static void subtract() {
+        System.out.println("\nSubtraction");
+        System.out.println("Please enter your first number : ");
+        Scanner inputs = new Scanner(System.in);
+        int firstNumber = inputs.nextInt();
+
+        System.out.println("Please Enter your second number : ");
+        int secondNumber = inputs.nextInt();
+
+        int total = firstNumber - secondNumber;
+        System.out.println("The total is " + total);
     }
 
     private static void divide() {
