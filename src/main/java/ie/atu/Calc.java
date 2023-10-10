@@ -6,6 +6,20 @@ public class Calc {
     public static void main(String[] args) {
         add();
         multiply();
+        divide();
+    }
+
+    private static void divide() {
+        System.out.println("\nDivision");
+        System.out.println("Please enter your first number : ");
+        Scanner inputs = new Scanner(System.in);
+        float firstNumber = inputs.nextInt();
+
+        System.out.println("Please Enter your second number : ");
+        float secondNumber = inputs.nextInt();
+
+        float total = firstNumber / secondNumber;
+        System.out.println("The total is " + total);
     }
 
     private static void multiply() {
